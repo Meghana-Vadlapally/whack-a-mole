@@ -1,0 +1,34 @@
+Whack a Mole
+
+Game Objective:
+
+Whack a mole is an arcade game. You are presented with a grid and a mole randomly pops through one of the cells.
+Your objective is to whack the mole each time it pops to get a point.
+You are exected to score points with the time limit. 
+
+
+Thought Process:
+
+To code this game, we need
+
+1) The access to every cell of the grid
+2) The access to the score
+3) The access to the timer
+4) A function for the mole to move randomly
+5) We need to check whether the player clicks on the mole
+6) With each click on the mole, the score should go up 
+7) The timer
+
+Algorithm:
+
+1) Get access to the entire grid, score and timer using query selectors
+2) Write a function for the mole to pop randomly
+    a) First, the existing mole in a cell should be removed
+    b) Pick a random number using math.random()(in range of grid size) and make the mole appear in it.
+    c) Log the id of the particular cell to check if the player clicks it
+3) Check whether the player clicks on the right cell to increase the score (using event listeners)
+4) set interval for the mole to randomly pop
+5) Write a function for the timer to go down and check when the game is over.
+
+
+
